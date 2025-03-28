@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO Offer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>YAY! It's BOGO</h2>
+        
+        <div class="option">
+            <input type="radio" class="radio-color" name="unit" id="oneUnit" value="10" checked>
+            <label for="oneUnit">
+                <span>1 Unit</span> <span class="discount">10% Off</span>
+                <span class="price">$10.00 USD</span> <span class="strike">$24.00 USD</span>
+            </label>
+        </div>
+
+        <div class="option popular">
+            <input type="radio" class="radio-color" name="unit" id="twoUnit" value="18">
+            <label for="twoUnit">
+                <span>2 Unit</span> <span class="discount">20% Off</span>
+                <span class="price">$18.00 USD</span> <span class="strike">$24.00 USD</span>
+                <span class="badge">MOST POPULAR</span>
+            </label>
+            <div class="dropdowns">
+                <div>
+                    <label>#1</label>
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <select>
+                        <option>Black</option>
+                        <option>White</option>
+                        <option>Red</option>
+                    </select>
+                </div>
+                <div>
+                    <label>#2</label>
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <select>
+                        <option>Black</option>
+                        <option>White</option>
+                        <option>Red</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="option">
+            <input type="radio" class="radio-color" name="unit" id="threeUnit" value="24">
+            <label for="threeUnit">
+                <span>3 Unit</span> <span class="discount">30% Off</span>
+                <span class="price">$24.00 USD</span> <span class="strike">$24.00 USD</span>
+            </label>
+        </div>
+
+        <p class="free-delivery">Free Delivery</p>
+        <p class="total">Total: <span id="totalPrice">$18.00 USD</span></p>
+
+        <button id="addToCart">+ Add to Cart</button>
+        <p class="powered-by">@Powered by Pumper</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
